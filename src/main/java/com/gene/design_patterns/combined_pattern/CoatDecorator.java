@@ -28,13 +28,4 @@ public class CoatDecorator extends OuterwearDecorator {
     public void describeFootwear() {
         outfit.describeFootwear();
     }
-
-    public void createDailyLook() {
-        describeTop();
-        describeBottom();
-        describeFootwear();
-        describeOuterwear();
-        drawDescribedOutfit();
-        cutDrawnOutfit();
-    }
 }
