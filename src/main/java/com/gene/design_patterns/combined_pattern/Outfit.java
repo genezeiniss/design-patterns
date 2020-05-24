@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public abstract class Outfit {
 
-    public final void createDailyLook() {
+    public void createDailyLook() {
         describeTop();
         describeBottom();
         describeFootwear();
@@ -19,11 +19,11 @@ public abstract class Outfit {
 
     public abstract void describeFootwear();
 
-    private void drawDescribedOutfit() {
+    public void drawDescribedOutfit() {
         log.info("drawing outfit according to selections");
     }
 
-    private void cutDrawnOutfit() {
+    public void cutDrawnOutfit() {
         log.info("cutting drawn outfit");
     }
 }

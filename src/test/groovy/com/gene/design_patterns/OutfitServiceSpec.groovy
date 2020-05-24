@@ -17,7 +17,7 @@ class OutfitServiceSpec extends Specification {
     }
 
     @Unroll
-    def "create summer outfit"() {
+    def "create season outfit"() {
         when:
         outfitService.createOutfit(season)
 
@@ -26,5 +26,13 @@ class OutfitServiceSpec extends Specification {
 
         where:
         season << [Season.SUMMER, Season.AUTUMN]
+    }
+
+    def "create autumn outfit with coat"() {
+        when:
+        outfitService.createAutumnOutfitWithCoat()
+
+        then:
+        noExceptionThrown()
     }
 }

@@ -13,4 +13,10 @@ public class OutfitService {
         Outfit seasonOutfit = seasonOutfitFactory.createOutfit(season);
         seasonOutfit.createDailyLook();
     }
+
+    public void createAutumnOutfitWithCoat() {
+        Outfit autumnOutfit = seasonOutfitFactory.createOutfit(Season.AUTUMN);
+        autumnOutfit = new CoatDecorator(autumnOutfit);
+        autumnOutfit.createDailyLook();
+    }
 }
