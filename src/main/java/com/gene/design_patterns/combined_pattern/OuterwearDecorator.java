@@ -7,6 +7,7 @@ public abstract class OuterwearDecorator extends Outfit {
 
     public abstract void describeOuterwear();
 
+    @Override
     public void createDailyLook() {
         describeTop();
         describeBottom();
