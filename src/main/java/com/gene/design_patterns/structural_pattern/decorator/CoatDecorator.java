@@ -1,5 +1,6 @@
-package com.gene.design_patterns.combined_pattern;
+package com.gene.design_patterns.structural_pattern.decorator;
 
+import com.gene.design_patterns.behavioral_pattern.template_method.Outfit;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 

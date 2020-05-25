@@ -1,5 +1,9 @@
-package com.gene.design_patterns.combined_pattern;
+package com.gene.design_patterns.service;
 
+import com.gene.design_patterns.behavioral_pattern.template_method.Outfit;
+import com.gene.design_patterns.behavioral_pattern.template_method.Season;
+import com.gene.design_patterns.behavioral_pattern.template_method.SeasonOutfitFactory;
+import com.gene.design_patterns.structural_pattern.decorator.CoatDecorator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

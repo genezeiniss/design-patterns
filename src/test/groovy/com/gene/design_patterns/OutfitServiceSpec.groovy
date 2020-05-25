@@ -1,8 +1,8 @@
 package com.gene.design_patterns
 
-import com.gene.design_patterns.combined_pattern.OutfitService
-import com.gene.design_patterns.combined_pattern.Season
-import com.gene.design_patterns.combined_pattern.SeasonOutfitFactory
+import com.gene.design_patterns.behavioral_pattern.template_method.Season
+import com.gene.design_patterns.behavioral_pattern.template_method.SeasonOutfitFactory
+import com.gene.design_patterns.service.OutfitService
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -17,7 +17,7 @@ class OutfitServiceSpec extends Specification {
     }
 
     @Unroll
-    def "create season outfit"() {
+    def "create season outfit - template method"() {
         when:
         outfitService.createOutfit(season)
 
@@ -28,7 +28,7 @@ class OutfitServiceSpec extends Specification {
         season << [Season.SUMMER, Season.AUTUMN]
     }
 
-    def "create autumn outfit with coat"() {
+    def "create autumn outfit with coat - template method with decorator"() {
         when:
         outfitService.createAutumnOutfitWithCoat()
 
