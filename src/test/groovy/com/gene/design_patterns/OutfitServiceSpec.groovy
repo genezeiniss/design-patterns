@@ -2,7 +2,7 @@ package com.gene.design_patterns
 
 import com.gene.design_patterns.behavioral_pattern.template_method.Season
 import com.gene.design_patterns.behavioral_pattern.template_method.SeasonOutfitFactory
-import com.gene.design_patterns.service.OutfitService
+import com.gene.design_patterns.structural_pattern.decorator.OutfitService
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -1,4 +1,4 @@
-package com.gene.design_patterns.aggregation;
+package com.gene.design_patterns.what_do_we_know_about.aggregation;
 
 import lombok.Builder;
 import lombok.Value;
